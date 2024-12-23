@@ -41,7 +41,7 @@
             content: '';
             width: 69.1rem;
             height: 81.2rem;
-            background: url(../assets/img/challenge/bg.png) no-repeat 0 0;
+            background: url(/assets/img/challenge/bg.png) no-repeat 0 0;
             background-size: 69.1rem;
             position: absolute;
             top: -1rem;
@@ -53,7 +53,7 @@
             content: '';
             width: 105rem;
             height: 25.9rem;
-            background: url(../assets/img/challenge/snow3.png) no-repeat 0 0;
+            background: url(/assets/img/challenge/snow3.png) no-repeat 0 0;
             background-size: 105rem;
             position: absolute;
             top: 0;
@@ -118,7 +118,7 @@
                 content: "";
                 width: 6.4rem;
                 height: 2.1rem;
-                background: url(../assets/img/challenge/ico-linkup.png) no-repeat 0 0;
+                background: url(/assets/img/challenge/ico-linkup.png) no-repeat 0 0;
                 background-size: 6.4rem;
                 position: absolute;
                 top: -1rem;
@@ -145,7 +145,7 @@
         top: 0;
         left: 40%;
         transform: translate(-40%, -32rem);
-        background: url(../assets/img/challenge/snow2.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/snow2.png) no-repeat 0 0;
         background-size: 106.6rem;
         animation: snowBlink 8s infinite;
         animation-timing-function: ease-in;
@@ -159,7 +159,7 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -31rem);
-        background: url(../assets/img/challenge/snow1.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/snow1.png) no-repeat 0 0;
         background-size: 31.1rem;
         animation: snowBlink 10s infinite;
         animation-timing-function: ease-in;
@@ -180,7 +180,7 @@
         top: 0;
         left: 40%;
         transform: translate(-47%, -32rem);
-        background: url(../assets/img/challenge/snow2.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/snow2.png) no-repeat 0 0;
         background-size: 106.6rem;
         animation: snowBlink 15s infinite;
         animation-delay: 3s;
@@ -196,7 +196,7 @@
         top: 0;
         left: 50%;
         transform: translate(-34%, -31rem);
-        background: url(../assets/img/challenge/snow1.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/snow1.png) no-repeat 0 0;
         background-size: 31.1rem;
         animation: snowBlink 17s infinite;
         animation-delay: 6s;
@@ -227,7 +227,7 @@
         display: block;
         width: 4.9rem;
         height: 5.3rem;
-        background: url(../assets/img/challenge/ico-deer1.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/ico-deer1.png) no-repeat 0 0;
         background-size: 4.9rem;
         position: absolute;
         top: 2.5rem;
@@ -241,7 +241,7 @@
         display: block;
         width: 3.6rem;
         height: 3.5rem;
-        background: url(../assets/img/challenge/ico-deer2.png) no-repeat 0 0;
+        background: url(/assets/img/challenge/ico-deer2.png) no-repeat 0 0;
         background-size: 3.6rem;
         position: absolute;
         top: 5.7rem;
