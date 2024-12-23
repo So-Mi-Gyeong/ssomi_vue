@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // 컴포넌트 임포트
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/StudyView.vue';
+import AniView from '../views/AniView.vue';
 import GuideButton from '../views/GuideButton.vue';
 import GuideTooltip from '../views/GuideTooltip.vue';
 
@@ -14,9 +15,14 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',  // about
+    path: '/about', 
     name: 'About',
     component: AboutView
+  },
+  {
+    path: '/Animation',
+    name: 'Animation',
+    component: AniView
   },
 
   // guide 페이지 경로
@@ -30,7 +36,6 @@ const routes = [
     name: 'GuideTooltip',
     component: GuideTooltip
   }
-
 ];
 
 // 라우터 인스턴스 생성

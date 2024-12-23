@@ -1,0 +1,261 @@
+<script setup>
+
+</script>
+
+<template>
+  <section class="challenge" data-challenge="12">
+    <div class="challenge-wrap">
+        <div class="mdl-wrap">
+            <div class="ani-snow"></div>
+            <div class="ani-snow2"></div>
+            <div class="challenge-today-walking">
+                <div class="today-walking-tit">
+                    <span>오늘의 걸음수</span>
+                    <h2><span>7,002</span> 걸음</h2>
+                </div>
+                <button type="button" class="linkup">걸음수 연동하러 가기</button>
+            </div>
+            <div class="ani-deer"></div>
+        </div>
+    </div>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.mdl-wrap {
+    width: 100%;
+    max-width: 43rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.challenge {
+    &-wrap {
+        width: calc(100vw + 2px);
+        height: 100dvh;
+        padding: calc(5.6rem + env(safe-area-inset-top) + 1.8rem) 2.4rem 5.7rem;
+        background: linear-gradient(180deg, #245F43 0%, #245F43 46rem, rgb(105, 156, 129) 78.2rem, rgb(255, 255, 255) 100%);
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 69.1rem;
+            height: 81.2rem;
+            background: url(../../src/assets/img/challenge/bg.png) no-repeat 0 0;
+            background-size: 69.1rem;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(calc(-50% - 3rem));
+        }
+
+        &::after {
+            content: '';
+            width: 105rem;
+            height: 25.9rem;
+            background: url(../../src/assets/img/challenge/snow3.png) no-repeat 0 0;
+            background-size: 105rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-today-walking {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 3.3rem;
+        position: relative;
+        z-index: 1;
+
+        .today-walking-tit {
+            margin-top: 1.8rem;
+            padding-left: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 1.6rem;
+                color: #fff;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+                font-weight: 500;
+                line-height: 2.2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 0.4rem;
+                color: #fff;
+
+                span {
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    line-height: 3.6rem;
+                    color: #fff;
+                }
+            }
+        }
+
+        .linkup {
+            height: 3.8rem;
+            padding: 0 1.6rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 0;
+            color: #fff;
+            border-radius: 4rem;
+            background-color: #004036;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 6.4rem;
+                height: 2.1rem;
+                background: url(../../src/assets/img/challenge/ico-linkup.png) no-repeat 0 0;
+                background-size: 6.4rem;
+                position: absolute;
+                top: -1rem;
+                right: 1.8rem;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+//ani
+//BG(눈)
+.ani-snow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+        content: "";
+        width: 106.6rem;
+        height: 24.1rem;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        transform: translate(-40%, -32rem);
+        background: url(../../src/assets/img/challenge/snow2.png) no-repeat 0 0;
+        background-size: 106.6rem;
+        animation: snowBlink 8s infinite;
+        animation-timing-function: ease-in;
+    }
+
+    &::after {
+        content: "";
+        width: 31.1rem;
+        height: 22.1rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -31rem);
+        background: url(../../src/assets/img/challenge/snow1.png) no-repeat 0 0;
+        background-size: 31.1rem;
+        animation: snowBlink 10s infinite;
+        animation-timing-function: ease-in;
+    }
+}
+
+.ani-snow2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+        content: "";
+        width: 106.6rem;
+        height: 24.1rem;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        transform: translate(-47%, -32rem);
+        background: url(../../src/assets/img/challenge/snow2.png) no-repeat 0 0;
+        background-size: 106.6rem;
+        animation: snowBlink 15s infinite;
+        animation-delay: 3s;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+    }
+
+    &::after {
+        content: "";
+        width: 31.1rem;
+        height: 22.1rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-34%, -31rem);
+        background: url(../../src/assets/img/challenge/snow1.png) no-repeat 0 0;
+        background-size: 31.1rem;
+        animation: snowBlink 17s infinite;
+        animation-delay: 6s;
+        animation-duration: 13s;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes snowBlink {
+    0% {
+        top: 0rem;
+        opacity: 1;
+    }
+
+    100% {
+        top: 73rem;
+        opacity: 0;
+    }
+}
+
+.ani-deer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 7.9rem));
+
+    &::before {
+        content: '';
+        display: block;
+        width: 4.9rem;
+        height: 5.3rem;
+        background: url(../../src/assets/img/challenge/ico-deer1.png) no-repeat 0 0;
+        background-size: 4.9rem;
+        position: absolute;
+        top: 2.5rem;
+        left: -0.5rem;
+        z-index: 1;
+        animation: anideer 4s ease-in-out infinite;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 3.6rem;
+        height: 3.5rem;
+        background: url(../../src/assets/img/challenge/ico-deer2.png) no-repeat 0 0;
+        background-size: 3.6rem;
+        position: absolute;
+        top: 5.7rem;
+    }
+}
+
+@keyframes anideer {
+    0%,
+    100% {
+        transform: rotate(-20deg);
+    }
+
+    0% {
+        transform: rotate(20deg);
+    }
+}
+</style>

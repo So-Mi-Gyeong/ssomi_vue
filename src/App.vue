@@ -3,6 +3,7 @@
     <article class="menu">
       <ul class="menu-list">
         <li><router-link class="menu-item" to="/about">Study</router-link></li>
+        <li><router-link class="menu-item" to="/animation">Animation</router-link></li>
 
         <!-- guide -->
         <li><router-link class="menu-item" to="/guideButton">Button</router-link></li>
@@ -19,7 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    border-bottom: .5rem solid #dedbd1;
+    position: relative;
+    z-index: 99;
+    // background-color: gray;
     overflow-x: auto;
     &-list{
       display: flex;
