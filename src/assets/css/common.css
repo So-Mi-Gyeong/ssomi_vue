@@ -87,31 +87,6 @@ input[type=radio],
 }
 
 /* ============================================================== */
-/*KB font*/
-@font-face {
-  font-family: "KBF";
-  font-style: normal;
-  font-weight: 300;
-  src: local(""), url("../fonts/kbfg/KBFGDISPLAYL.woff") format("woff"), url("../fonts/kbfg/KBFGDISPLAYL.woff2") format("woff2");
-}
-@font-face {
-  font-family: "KBF";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/kbfg/KBFGDISPLAYM.woff") format("woff"), url("../fonts/kbfg/KBFGDISPLAYM.woff2") format("woff2");
-}
-@font-face {
-  font-family: "KBF";
-  font-style: italic;
-  font-weight: 400;
-  src: local(""), url("../fonts/kbfg/KBFGDISPLAYMI.woff") format("woff"), url("../fonts/kbfg/KBFGDISPLAYMI.woff2") format("woff2");
-}
-@font-face {
-  font-family: "KBF";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/kbfg/KBFGDISPLAYB.woff") format("woff"), url("../fonts/kbfg/KBFGDISPLAYB.woff2") format("woff2");
-}
 :root {
   /* iOS 11.2 이상 */
   --sat: env(safe-area-inset-top);
@@ -318,37 +293,4 @@ body {
 .mdl-bul-dot li div {
   font-size: 1.6rem;
   font-weight: 300;
-}
-
-.bakery-txt-group {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.bakery-txt-em {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 2.4rem;
-  color: #564335;
-}
-.bakery-txt-tit {
-  width: 26rem;
-  margin: 1.6rem auto 0;
-}
-.bakery-txt-tit img {
-  width: 100%;
-}
-.bakery-txt-txt {
-  margin-top: 1.6rem;
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 2.4rem;
-  color: #564335;
-}
-.bakery-txt-paragraph {
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 2.3rem;
-  color: #564335;
-  text-align: center;
 }/*# sourceMappingURL=common.css.map */
