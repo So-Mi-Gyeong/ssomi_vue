@@ -1,17 +1,27 @@
-<template>
-  <div class="home">
-    <HelloWorld222 msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
 <script>
 // @ is an alias to /src
-import HelloWorld222 from '@/components/HelloWorld.vue'
+import myVue from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld222
+    myVue
   }
 }
 </script>
+
+<template>
+  <div class="home">
+    <myVue msg="SSOMI's Guide"/>
+  </div>
+</template>
+
+<style lang="scss">
+  .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 5.5rem);
+    background-color: #dedbd1;
+  }
+</style>
