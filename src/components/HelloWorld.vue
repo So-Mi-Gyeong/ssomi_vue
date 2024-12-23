@@ -18,5 +18,6 @@ export default {
   h1{
     font-size: 10rem;
     color: #222;
+    text-shadow: 0.1rem 0.5rem 1rem #474747;
   }
 </style>
