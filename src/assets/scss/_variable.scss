@@ -1,0 +1,155 @@
+@charset "utf-8";
+:root {
+    /* iOS 11.2 이상 */
+    --sat: env(safe-area-inset-top);
+    --sar: env(safe-area-inset-right);
+    --sab: env(safe-area-inset-bottom);
+    --sal: env(safe-area-inset-left);
+
+    //color
+    --btn-font-l: normal normal 500 1.8rem/2rem 'KBF';
+    --btn-font-m: normal normal 500 1.4rem/1.6rem 'Base';
+    --btn-font-s: normal normal 400 1.4rem/1.6rem 'Base';
+    --btn-font-t: normal normal 400 1.4rem/1.8rem 'Base';
+
+    --btn-height-l: 5.6rem;
+    --btn-height-m: 4.4rem;
+    --btn-height-s: 2.8rem;
+
+    //color
+	--color-kb-yellow-10: #FFFCEA;	
+	--color-kb-yellow-40: #FFED94; //btn tonal
+	--color-kb-yellow-70: #FFE443;
+	--color-kb-yellow-100: #FFD700;
+	--color-kb-yellow-200: #FFC700; //btn filed
+	--color-kb-yellow-300: #FFBE1C;
+	--color-red: #F66D6D; //주의
+	--color-orange: #FF862F; //경계
+	--color-green: #00C378; //정상
+	--color-blue: #6B9CFF; //일반
+	--color-red-text: #E93333; //주의
+	--color-orange-text: #EC6300; //경계 
+	--color-green-text: #00935A; //정상
+	--color-blue-text: #4880ED; //일반
+	--color-gray-0: #000000;
+	--color-gray-50: #111111;
+	--color-gray-100: #333A44;
+	--color-gray-150: #444B55;
+	--color-gray-200: #555B66;
+	--color-gray-300: #666C77;
+	--color-gray-350: #777D88;
+	--color-gray-400: #888E99;
+	--color-gray-500: #999EAA; //btn outlined
+	--color-gray-550: #B7BABF;
+	--color-gray-600: #DADCDF; //btn disabled(bg,line)
+	--color-gray-700: #EDEDEE; //btn gray
+	--color-gray-750: #F5F5F5;
+	--color-gray-800: #F7F7F7;
+	--color-gray-850: #FAFAFA;
+	--color-gray-900: #FFFFFF;
+
+    /* Grayscale */
+    --gray_100: #000; //ok
+    --gray_95:  #222; //ok 
+    --gray_90:  #444;
+    --gray_80:  #666; //ok
+    --gray_70:  #777;
+    --gray_60:  #999; //ok
+    --gray_50:  #ccc;
+    --gray_40:  #d7d7d7;
+    --gray_30:  #e5e5e5;
+    --gray_20:  #eee;
+    --gray_10:  #f7f7f7;
+    --gray_0:   #fff; //ok
+
+    --line: #724B2F;
+    --line_gray: #ddd; //ok
+}
+
+//기본간격
+$gap : 0.8rem;
+$gap-h : calc($gap / 2);
+@mixin getGap($name, $n){#{$name} : $gap * $n;}
+$x0: calc($gap * 0);
+$x1: calc($gap * 1);
+$x2: calc($gap * 2);
+$x3: calc($gap * 3);
+$x4: calc($gap * 4);
+$x5: calc($gap * 5);
+$x6: calc($gap * 6);
+$x7: calc($gap * 7);
+$x8: calc($gap * 8);
+$x9: calc($gap * 9);
+$x10: calc($gap * 10);
+$x11: calc($gap * 11);
+$x12: calc($gap * 12);
+$x13: calc($gap * 13);
+$x14: calc($gap * 14);
+$x15: calc($gap * 15);
+$x16: calc($gap * 16);
+$x17: calc($gap * 17);
+$x18: calc($gap * 18);
+$x19: calc($gap * 19);
+$x20: calc($gap * 20);
+$x0_5: calc($gap-h);
+$x1_5: calc($gap * 1 + $gap-h);
+$x2_5: calc($gap * 2 + $gap-h);
+$x3_5: calc($gap * 3 + $gap-h);
+$x4_5: calc($gap * 4 + $gap-h);
+$x5_5: calc($gap * 5 + $gap-h);
+$x6_5: calc($gap * 6 + $gap-h);
+$x7_5: calc($gap * 7 + $gap-h);
+$x8_5: calc($gap * 8 + $gap-h);
+$x9_5: calc($gap * 9 + $gap-h);
+$x10_5: calc($gap * 10 + $gap-h);
+$x11_5: calc($gap * 11 + $gap-h);
+$x12_5: calc($gap * 12 + $gap-h);
+$x13_5: calc($gap * 13 + $gap-h);
+$x14_5: calc($gap * 14 + $gap-h);
+$x15_5: calc($gap * 15 + $gap-h);
+$x16_5: calc($gap * 16 + $gap-h);
+$x17_5: calc($gap * 17 + $gap-h);
+$x18_5: calc($gap * 18 + $gap-h);
+$x19_5: calc($gap * 19 + $gap-h);
+$x20_5: calc($gap * 20 + $gap-h);
+$-x1: calc($gap * -1);
+$-x2: calc($gap * -2);
+$-x3: calc($gap * -3);
+$-x4: calc($gap * -4);
+$-x5: calc($gap * -5);
+$-x6: calc($gap * -6);
+$-x7: calc($gap * -7);
+$-x8: calc($gap * -8);
+$-x9: calc($gap * -9);
+$-x10: calc($gap * -10);
+$-x11: calc($gap * -11);
+$-x12: calc($gap * -12);
+$-x13: calc($gap * -13);
+$-x14: calc($gap * -14);
+$-x15: calc($gap * -15);
+$-x16: calc($gap * -16);
+$-x17: calc($gap * -17);
+$-x18: calc($gap * -18);
+$-x19: calc($gap * -19);
+$-x20: calc($gap * -20);
+$-x0_5: calc($gap-h * -1);
+$-x1_5: calc($gap * -1 - $gap-h);
+$-x2_5: calc($gap * -2 - $gap-h);
+$-x3_5: calc($gap * -3 - $gap-h);
+$-x4_5: calc($gap * -4 - $gap-h);
+$-x5_5: calc($gap * -5 - $gap-h);
+$-x6_5: calc($gap * -6 - $gap-h);
+$-x7_5: calc($gap * -7 - $gap-h);
+$-x8_5: calc($gap * -8 - $gap-h);
+$-x9_5: calc($gap * -9 - $gap-h);
+$-x10_5: calc($gap * -10 - $gap-h);
+$-x11_5: calc($gap * -11 - $gap-h);
+$-x12_5: calc($gap * -12 - $gap-h);
+$-x13_5: calc($gap * -13 - $gap-h);
+$-x14_5: calc($gap * -14 - $gap-h);
+$-x15_5: calc($gap * -15 - $gap-h);
+$-x16_5: calc($gap * -16 - $gap-h);
+$-x17_5: calc($gap * -17 - $gap-h);
+$-x18_5: calc($gap * -18 - $gap-h);
+$-x19_5: calc($gap * -19 - $gap-h);
+$-x20_5: calc($gap * -20 - $gap-h);
