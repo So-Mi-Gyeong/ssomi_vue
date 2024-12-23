@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 // 컴포넌트 임포트
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/StudyView.vue';
-import ProductsView from '../views/ProductsView.vue';
 import GuideButton from '../views/GuideButton.vue';
 import GuideTooltip from '../views/GuideTooltip.vue';
 
@@ -18,11 +17,6 @@ const routes = [
     path: '/about',  // about
     name: 'About',
     component: AboutView
-  },
-  {
-    path: '/products',
-    name: 'Products',
-    component: ProductsView
   },
 
   // guide 페이지 경로
