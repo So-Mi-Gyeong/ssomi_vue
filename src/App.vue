@@ -18,7 +18,7 @@
 <style lang="scss">
   .menu{
     width: 100%;
-    height: 5rem;
+    min-height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       gap: 1.6rem;
     }
     &-item{
@@ -38,6 +39,10 @@
       padding: .8rem 1.6rem;
       border-radius: 5rem;
       color: #fff;
+    }
+
+    @media screen and (max-width: 500px){
+      min-height: 15rem;
     }
   }
 </style>
