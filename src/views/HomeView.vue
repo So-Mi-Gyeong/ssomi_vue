@@ -1,22 +1,25 @@
 <script>
-// @ is an alias to /src
-import myVue from '@/components/HelloWorld.vue'
+import myVueText from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'HomeView',
   components: {
-    myVue
+    myVueText
+  },
+  data() {
+    return {
+      animatedText: "SSOMI'sGuide"
+    };
   }
 }
 </script>
 
 <template>
   <div class="home">
-    <myVue msg="SSOMI's Guide"/>
+    <myVueText msg="SSOMI'sGuide"/>
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
   .home{
     display: flex;
     justify-content: center;
