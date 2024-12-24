@@ -1,0 +1,27 @@
+@use "_variable";
+
+.h-1{font: var(--font-h1);}
+.h-2{font: var(--font-h2);}
+.h-3{font: var(--font-h3);}
+.h-4{font: var(--font-h4);}
+.h-5{font: var(--font-h5);}
+
+.body-1-700{font: var(--font-b1-700);}
+.body-1-400{font: var(--font-b1-400);}
+.body-2-700{font: var(--font-b2-700);}
+.body-2-500{font: var(--font-b2-500);}
+.body-2-400{font: var(--font-b2-400);}
+.body-2-300{font: var(--font-b2-300);}
+.body-3-700{font: var(--font-b3-700);}
+.body-3-500{font: var(--font-b3-500);}
+.body-3-400{font: var(--font-b3-400);}
+.body-4-700{font: var(--font-b4-700);}
+.body-4-500{font: var(--font-b4-500);}
+.body-4-400{font: var(--font-b4-400);}
+.body-4-300{font: var(--font-b4-300);}
+
+.em-1 {font: var(--font-em1);}
+
+.cpt-1-400{font: var(--font-cap1-400);}
+.cpt-1-300{font: var(--font-cap1-300);}
+.cpt-2{font: var(--font-cap2);}

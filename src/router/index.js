@@ -4,7 +4,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/StudyView.vue';
 import AniView from '../views/AniView.vue';
+
 import GuideButton from '../views/GuideButton.vue';
+import GuideText from '../views/GuideText.vue';
 import GuideTooltip from '../views/GuideTooltip.vue';
 
 // 라우터 설정
@@ -30,6 +32,11 @@ const routes = [
     path: '/guideButton',  
     name: 'GuideButton',
     component: GuideButton
+  },
+  {
+    path: '/guideText',  
+    name: 'GuideText',
+    component: GuideText
   },
   {
     path: '/guideTooltip',

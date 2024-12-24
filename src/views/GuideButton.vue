@@ -30,7 +30,7 @@ export default {
 <template>
   <article class="guide">
     <h2>Button</h2>
-    <p>
+    <p class="guide-txt">
       버튼의 높이에 따라 Large/Medium/Small로 나뉘며, 동일한 크기의 버튼에서도 중요도에 따라 Filled부터, 눈에 띄는 컬러부터 사용합니다.
       가이드는 너비 375px을 기준으로 하며, Full 또는 Half 사용시 디바이스의 너비에 따라 달라집니다.
       사용자에게 많은 선택과 행동을 요구하는 것은 혼란을 줄 수 있어 한 페이지에서 최소한의 버튼을 사용하도록 합니다.
@@ -379,7 +379,7 @@ export default {
     h4{
       margin-bottom: .8rem;
     }
-    p{
+    .guide-txt{
       font-size: 1.2rem;
       font-weight: 300;
       color: #000;
@@ -387,7 +387,7 @@ export default {
     &-box{
       padding: 2.4rem;
       margin-top: 2rem;
-      border: .1rem solid #ddd;
+      border: 0.1rem dashed #919191;
       border-radius: 1.2rem;
     }
     &-wrap{
@@ -436,7 +436,6 @@ export default {
   .line{
     display: block;
     width: 100%;
-    max-width: 37.5rem;
     padding: 0;
     margin: 2.4rem auto;
     border-top: .1rem solid #eee;

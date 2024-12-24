@@ -8,6 +8,7 @@
 
         <!-- guide -->
         <li><router-link class="menu-item" to="/guideButton">Button</router-link></li>
+        <li><router-link class="menu-item" to="/guideText">Text</router-link></li>
         <!-- <li><router-link class="menu-item" to="/guideTooltip">Tooltip</router-link></li> -->
       </ul>
     </article>

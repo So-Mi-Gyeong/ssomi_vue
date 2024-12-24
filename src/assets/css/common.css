@@ -87,6 +87,86 @@ input[type=radio],
 }
 
 /* ============================================================== */
+/*base*/
+@font-face {
+  font-family: "Base";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"), url(@/assets/fonts/pretendard/Pretendard-Black.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Black.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url(@/assets/fonts/pretendard/Pretendard-ExtraBold.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-ExtraBold.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url(@/assets/fonts/pretendard/Pretendard-Bold.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Bold.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url(@/assets/fonts/pretendard/Pretendard-SemiBold.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-SemiBold.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url(@/assets/fonts/pretendard/Pretendard-Medium.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Medium.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url(@/assets/fonts/pretendard/Pretendard-Regular.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Regular.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url(@/assets/fonts/pretendard/Pretendard-Light.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Light.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url(@/assets/fonts/pretendard/Pretendard-ExtraLight.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-ExtraLight.subset.woff) format("woff");
+}
+@font-face {
+  font-family: "Base";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url(@/assets/fonts/pretendard/Pretendard-Thin.subset.woff2) format("woff2"), url(@/assets/fonts/pretendard/Pretendard-Thin.subset.woff) format("woff");
+}
+/*KB font*/
+@font-face {
+  font-family: "KBF";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("@/assets/fonts/kbfg/KBFGDISPLAYL.woff") format("woff"), url("@/assets/fonts/kbfg/KBFGDISPLAYL.woff2") format("woff2");
+}
+@font-face {
+  font-family: "KBF";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("@/assets/fonts/kbfg/KBFGDISPLAYM.woff") format("woff"), url("@/assets/fonts/kbfg/KBFGDISPLAYM.woff2") format("woff2");
+}
+@font-face {
+  font-family: "KBF";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("@/assets/fonts/kbfg/KBFGDISPLAYMI.woff") format("woff"), url("@/assets/fonts/kbfg/KBFGDISPLAYMI.woff2") format("woff2");
+}
+@font-face {
+  font-family: "KBF";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("@/assets/fonts/kbfg/KBFGDISPLAYB.woff") format("woff"), url("@/assets/fonts/kbfg/KBFGDISPLAYB.woff2") format("woff2");
+}
 :root {
   /* iOS 11.2 이상 */
   --sat: env(safe-area-inset-top);
@@ -145,6 +225,30 @@ input[type=radio],
   --gray_0: #fff;
   --line: #724B2F;
   --line_gray: #ddd;
+  --font-h1: normal normal 700 3.2rem/4rem "KBF";
+  --font-h2: normal normal 700 2.6rem/3.6rem "KBF";
+  --font-h3: normal normal 700 2.2rem/3.2rem "KBF";
+  --font-h4: normal normal 700 2rem/2.6rem "KBF";
+  --font-h5: normal normal 700 2rem/2.6rem "Base";
+  --font-b1-700: normal normal 700 1.8rem/2.6rem "Base";
+  --font-b1-400: normal normal 400 1.8rem/2.6rem "Base";
+  --font-b2-700: normal normal 700 1.6rem/2.2rem "Base";
+  --font-b2-500: normal normal 500 1.6rem/2.2rem "Base";
+  --font-b2-400: normal normal 400 1.6rem/2.2rem "Base";
+  --font-b2-300: normal normal 300 1.6rem/2.2rem "Base";
+  --font-b3-700: normal normal 700 1.5rem/2.2rem "Base";
+  --font-b3-500: normal normal 500 1.5rem/2.2rem "Base";
+  --font-b3-400: normal normal 400 1.5rem/2.2rem "Base";
+  --font-b4-700: normal normal 700 1.4rem/2rem "Base";
+  --font-b4-500: normal normal 500 1.4rem/2rem "Base";
+  --font-b4-400: normal normal 400 1.4rem/2rem "Base";
+  --font-b4-300: normal normal 300 1.4rem/2rem "Base";
+  --font-em1: normal normal 700 4rem/4.8rem "Base";
+  --font-cap1-700: normal normal 700 1.3rem/1.8rem "Base";
+  --font-cap1-400: normal normal 400 1.3rem/1.8rem "Base";
+  --font-cap1-300: normal normal 300 1.3rem/1.8rem "Base";
+  --font-cap2: normal normal 300 1.2rem/1.8rem "Base";
+  --font-header-main: normal normal 700 1.8rem/2.2rem "KBF";
 }
 
 .mdl-btn-wrap {
@@ -240,6 +344,94 @@ input[type=radio],
   color: var(--color-gray-500) !important;
 }
 
+.h-1 {
+  font: var(--font-h1);
+}
+
+.h-2 {
+  font: var(--font-h2);
+}
+
+.h-3 {
+  font: var(--font-h3);
+}
+
+.h-4 {
+  font: var(--font-h4);
+}
+
+.h-5 {
+  font: var(--font-h5);
+}
+
+.body-1-700 {
+  font: var(--font-b1-700);
+}
+
+.body-1-400 {
+  font: var(--font-b1-400);
+}
+
+.body-2-700 {
+  font: var(--font-b2-700);
+}
+
+.body-2-500 {
+  font: var(--font-b2-500);
+}
+
+.body-2-400 {
+  font: var(--font-b2-400);
+}
+
+.body-2-300 {
+  font: var(--font-b2-300);
+}
+
+.body-3-700 {
+  font: var(--font-b3-700);
+}
+
+.body-3-500 {
+  font: var(--font-b3-500);
+}
+
+.body-3-400 {
+  font: var(--font-b3-400);
+}
+
+.body-4-700 {
+  font: var(--font-b4-700);
+}
+
+.body-4-500 {
+  font: var(--font-b4-500);
+}
+
+.body-4-400 {
+  font: var(--font-b4-400);
+}
+
+.body-4-300 {
+  font: var(--font-b4-300);
+}
+
+.em-1 {
+  font: var(--font-em1);
+}
+
+.cpt-1-400 {
+  font: var(--font-cap1-400);
+}
+
+.cpt-1-300 {
+  font: var(--font-cap1-300);
+}
+
+.cpt-2 {
+  font: var(--font-cap2);
+}
+
 html {
   font-size: 10px;
 }
@@ -260,7 +452,7 @@ html {
 }
 body {
   font-family: "KBF", sans-serif;
-  color: #666;
+  color: #222;
   font-size: 1.4rem;
   word-break: keep-all;
   min-height: 100vh;
