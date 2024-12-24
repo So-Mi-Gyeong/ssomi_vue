@@ -18,15 +18,15 @@
 <style lang="scss">
   .menu{
     width: 100%;
-    min-height: 5rem;
+    min-height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: .5rem solid #dedbd1;
-    background-color: #fff;
+    background-color: #222;
+    // background: linear-gradient(#fff 20%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0));
     position: relative;
     z-index: 99;
-    // background-color: gray;
     overflow-x: auto;
     &-list{
       display: flex;
@@ -36,6 +36,7 @@
       gap: 1.6rem;
     }
     &-item{
+      font: var(--font-b2-700);
       background-color: #000;
       padding: .8rem 1.6rem;
       border-radius: 5rem;

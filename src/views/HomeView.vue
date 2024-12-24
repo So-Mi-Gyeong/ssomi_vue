@@ -22,6 +22,6 @@ export default {
     justify-content: center;
     align-items: center;
     height: calc(100dvh - 5.5rem);
-    background-color: #dedbd1;
+    background-color: #222;
   }
 </style>

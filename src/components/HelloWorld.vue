@@ -16,8 +16,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   h1{
+    font-family: 'base';
     font-size: 10rem;
-    color: #222;
+    color: #dedbd1;
     word-break: break-word;
     text-align: center;
     @media (max-width: 750px) {
