@@ -36,7 +36,6 @@
         padding: calc(5.6rem + env(safe-area-inset-top) + 1.8rem) 2.4rem 5.7rem;
         background: linear-gradient(180deg, #245F43 0%, #245F43 46rem, rgb(105, 156, 129) 78.2rem, rgb(255, 255, 255) 100%);
         position: relative;
-        box-sizing: border-box;
 
         &::before {
             content: '';
