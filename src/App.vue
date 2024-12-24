@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: .5rem solid #dedbd1;
+    background-color: #fff;
     position: relative;
     z-index: 99;
     // background-color: gray;
@@ -38,7 +39,7 @@
       background-color: #000;
       padding: .8rem 1.6rem;
       border-radius: 5rem;
-      color: #fff;
+      color: #dedbd1;
     }
 
     @media screen and (max-width: 500px){
