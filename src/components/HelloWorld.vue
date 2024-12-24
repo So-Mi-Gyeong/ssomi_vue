@@ -21,7 +21,7 @@ export default {
     text-shadow: 0.1rem 0.5rem 1rem #474747;
     word-break: break-word;
     text-align: center;
-    @media (max-width: 500px) {
+    @media (max-width: 750px) {
       font-size: 8rem;
     }
   }
