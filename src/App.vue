@@ -15,7 +15,7 @@
     <router-view></router-view><!-- 이곳에 해당하는 컴포넌트가 렌더링됩니다 -->
   </div>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
   .menu{
     width: 100%;
     min-height: 7rem;

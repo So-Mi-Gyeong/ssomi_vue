@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/StudyView.vue';
 import AniView from '../views/AniView.vue';
+import TestView from '../views/TestView.vue'
 
 import GuideButton from '../views/GuideButton.vue';
 import GuideText from '../views/GuideText.vue';
@@ -14,7 +15,18 @@ const routes = [
   {
     path: '/',  // 기본 경로 (홈 화면)
     name: 'Home',
-    component: HomeView
+    component: HomeView,
+    children: [
+      {
+        path: '/',
+        alias: ['/home', '/main'],
+        name: 'TestView',
+        component: TestView,
+        meta: {
+          depth: 1
+        }
+      },
+    ],
   },
   {
     path: '/about', 

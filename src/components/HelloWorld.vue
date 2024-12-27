@@ -1,15 +1,15 @@
-<script>
-export default {
-  props: {
-    msg: String
-  }
-}
+<script setup>
+import {defineProps} from 'vue';
+
+const props = defineProps({
+  msg: String
+});
 </script>
 
 <template>
  <div>
     <p class="bouncy-text">
-      <span v-for="(char, index) in msg" :key="index">{{ char }}</span>
+      <span v-for="(char, index) in props.msg" :key="index">{{ char }}</span>
     </p>
   </div>
 </template>

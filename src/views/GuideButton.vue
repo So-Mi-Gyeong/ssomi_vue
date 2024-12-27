@@ -1,31 +1,26 @@
-<script>
-export default {
-  data() {
-    return {
-      size: {
-        large: 'large',
-        medium: 'medium',
-        small: 'small'
-      },
-      styles: {
-        btnFiled: 'filed',
-        btnYellow: 'tonal-yellow',
-        btnGray: 'tonal-gray',
-        btnLine: 'outlined',
-        btnLineS: 'outlined-s'
-      },
-      text: {
-        btnText: '시작하기'
-      },
-      disabled: true
-    };
-  },
-  methods: {
-    handleClick() {
-      console.log('버튼 클릭됨');
-    }
-  }
+<script setup>
+import {ref} from 'vue';
+
+//상태 정의
+const size = {
+  large: 'large',
+  medium: 'medium',
+  small: 'small'
 };
+
+const styles = {
+  btnFiled: 'filed',
+  btnYellow: 'tonal-yellow',
+  btnGray: 'tonal-gray',
+  btnLine: 'outlined',
+  btnLineS: 'outlined-s'
+};
+
+const text = {
+  btnText: '시작하기'
+};
+
+const disabled = ref(true);
 </script>
 <template>
   <article class="guide">
