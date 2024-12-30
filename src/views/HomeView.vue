@@ -19,6 +19,6 @@ const animatedText = "SSOMI'sGuide";
   align-items: center;
   height: calc(100dvh - 5.5rem);
   background-color: #222;
-  padding: 1rem;  /* 패딩 추가로 화면에 여유 공간 주기 */
+  padding: 1rem;
 }
 </style>

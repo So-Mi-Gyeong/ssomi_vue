@@ -4,29 +4,17 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/StudyView.vue';
 import AniView from '../views/AniView.vue';
-import TestView from '../views/TestView.vue'
 
+import GuideHome from '../views/GuideHome.vue';
 import GuideButton from '../views/GuideButton.vue';
 import GuideText from '../views/GuideText.vue';
-import GuideTooltip from '../views/GuideTooltip.vue';
 
 // 라우터 설정
 const routes = [
   {
     path: '/',  // 기본 경로 (홈 화면)
     name: 'Home',
-    component: HomeView,
-    children: [
-      {
-        path: '/',
-        alias: ['/home', '/main'],
-        name: 'TestView',
-        component: TestView,
-        meta: {
-          depth: 1
-        }
-      },
-    ],
+    component: HomeView
   },
   {
     path: '/about', 
@@ -41,19 +29,28 @@ const routes = [
 
   // guide 페이지 경로
   {
-    path: '/guideButton',  
-    name: 'GuideButton',
-    component: GuideButton
+    path: '/guideHome',
+    name: 'GuideHome',
+    component: GuideHome,
+    redirect: {name: 'GuideButtonChild'},
+    children: [
+      {
+        path: 'guideButton',  
+        name: 'GuideButtonChild',
+        component: GuideButton
+      },
+      {
+        path: 'guideText',  
+        name: 'GuideTextChild',
+        component: GuideText
+      }
+    ]
   },
+
   {
-    path: '/guideText',  
-    name: 'GuideText',
-    component: GuideText
-  },
-  {
-    path: '/guideTooltip',
-    name: 'GuideTooltip',
-    component: GuideTooltip
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue')
   }
 ];
 
