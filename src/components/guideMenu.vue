@@ -18,12 +18,15 @@
       justify-content: center;
       align-items: center;
       gap: .8rem;
+      margin-top: 2rem;
       li{
         a{
           display: flex;
           justify-content: center;
           align-items: center;
           gap: .8rem;
+          font: var(--font-b1-400);
+          color: var(--gray_60);
           &::after{
             content: '|';
           }
